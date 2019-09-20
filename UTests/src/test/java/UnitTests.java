@@ -1,67 +1,67 @@
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class UnitTests {
     @DisplayName("First Test")
     @Test
     void FirstUnitTest(){
-        assertEquals(TriangleInquety.Check(1,2,3), false);
+        assertFalse(TriangleInquety.Check(1, 2, 3));
     }
 
     @DisplayName("Second Test")
     @Test
     void SecondUnitTest(){
-        assertEquals(TriangleInquety.Check(2,4,4), true);
+        assertTrue(TriangleInquety.Check(2, 4, 4));
     }
 
     @DisplayName("Third Test")
     @Test
     void ThirdUnitTest(){
-        assertEquals(TriangleInquety.Check(4,4,2), true);
+        assertTrue(TriangleInquety.Check(4, 4, 2));
     }
 
     @DisplayName("Fourth Test")
     @Test
     void FourthUnitTest(){
-        assertEquals(TriangleInquety.Check(1,0,3), false);
+        assertFalse(TriangleInquety.Check(1, 0, 3));
     }
 
     @DisplayName("Fifth Test")
     @Test
     void FifthUnitTest(){
-        assertEquals(TriangleInquety.Check(1,-2,0), false);
+        assertFalse(TriangleInquety.Check(1, -2, 0));
     }
 
     @DisplayName("Sixth Test")
     @Test
     void SixthUnitTest(){
-        assertEquals(TriangleInquety.Check(1,1,1), true);
+        assertTrue(TriangleInquety.Check(1, 1, 1));
     }
 
     @DisplayName("Seventh Test")
     @Test
     void SeventhUnitTest(){
-        assertEquals(TriangleInquety.Check(1,-1,1), false);
+        assertFalse(TriangleInquety.Check(1, -1, 1));
     }
 
     @DisplayName("Eighth Test")
     @Test
     void EighthUnitTest(){
-        assertEquals(TriangleInquety.Check(0,2,0), false);
+        assertFalse(TriangleInquety.Check(0, 2, 0));
     }
 
     @DisplayName("Ninth Test")
     @Test
     void NinthUnitTest(){
-        assertEquals(TriangleInquety.Check(10,2,10), true);
+        assertTrue(TriangleInquety.Check(10, 2, 10));
     }
 
     @DisplayName("Final Test")
     @Test
     void TenthUnitTest(){
-        assertEquals(TriangleInquety.Check(3,100,2), false);
+        assertFalse(TriangleInquety.Check(3, 100, 2));
     }
 
 }
