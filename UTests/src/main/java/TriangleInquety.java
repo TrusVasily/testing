@@ -5,8 +5,4 @@ public class TriangleInquety {
         }
         return false;
     }
-
-    public static void main(String[] args) {
-
-    }
 }
